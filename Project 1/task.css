@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+.content {
+    margin-top: 350px;
+    text-align: center;
+    color: forestgreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#task{
+    height: 50px;
+    width: 550px;
+    border-style: none;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+#btn{
+    border-radius: 25px;
+    background-color: dimgray;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}

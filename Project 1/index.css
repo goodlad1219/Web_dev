@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+.Intro {
+    margin-top: 350px;
+    text-align: center;
+    color: forestgreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Btn {
+    text-align: center;
+}
+
+#btn{
+    border-radius: 25px;
+    padding: 10px;
+    background-color: dimgray;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}

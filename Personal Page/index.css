@@ -1,0 +1,25 @@
+body{
+    background-color:#151515 ;
+}
+.name{
+    color:#FFFFFF;
+    font-family: 'Lato';
+    font-size: xx-large ;
+    font-weight: 800;
+    float: left;
+    margin-top: 3px
+}
+
+.anchored-pages {
+    list-style: none;
+    margin-top: 21px;
+    float: right;
+}
+
+li{
+    display: inline-block;
+    padding-right: 15px;
+    margin: 0;
+    color:#FFFFFF;
+    font-family:'Lato';
+}

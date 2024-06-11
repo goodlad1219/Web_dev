@@ -37,3 +37,11 @@
     margin-top: 0%;
 }
 
+.form{
+    display: flex;
+    width: 414.722px;
+    height: auto;
+    flex-direction: column;
+
+}
+

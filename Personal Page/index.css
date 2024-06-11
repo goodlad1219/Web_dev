@@ -1,7 +1,10 @@
 body{
     background-color:#151515 ;
 }
-.name{
+#Header{
+    padding-bottom: 70px;
+}
+#name{
     color:#FFFFFF;
     font-family: 'Lato';
     font-size: xx-large ;
@@ -10,16 +13,35 @@ body{
     margin-top: 3px
 }
 
-.anchored-pages {
+#Menu {
     list-style: none;
     margin-top: 21px;
     float: right;
 }
 
-li{
+.menu{
     display: inline-block;
     padding-right: 15px;
     margin: 0;
     color:#FFFFFF;
     font-family:'Lato';
+}
+
+#Profile_picture{   
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #151515;
+    position:absolute;
+    top: 300px;;
+    left: 5%;
+    
+}
+#Cover{
+    height: 319px;
+    width: 1902px;
+    background-color: #FFFFFF;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }

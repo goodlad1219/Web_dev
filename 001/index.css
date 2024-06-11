@@ -1,0 +1,39 @@
+.Content1 .Image{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 50%;
+    display: inline;
+    float: left;
+    padding: 0.25%;
+
+}
+.Content2{
+    display: inline;
+    float: left;
+    font-family: Helvetica;
+}
+.Content2 h2{
+    font-size: 500%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.Content2 h1{
+    font-size: 1100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: coral;
+}
+
+.Subtitle{
+    width: 414.722px;
+    height: fit-content;
+
+}
+
+#subtitle{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 0%;
+}
+

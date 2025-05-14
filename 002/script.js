@@ -21,9 +21,6 @@ function time_subtitle() {
     let subtitle = date+" | "+time;
 
     document.getElementById("Subtitle").innerHTML = subtitle
-    // console.log(time);
-    // console.log(date);
-    // console.log(subtitle)
 }
 
 setInterval(time_subtitle, 1000) 

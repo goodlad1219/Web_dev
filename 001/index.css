@@ -40,8 +40,11 @@
 .form{
     display: flex;
     width: 414.722px;
-    height: auto;
-    flex-direction: column;
+    height:max-content;
+    font-size: x-large;
+    flex-direction: column;                                                                      
+}
 
+.form .name{    
 }
 

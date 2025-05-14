@@ -57,7 +57,7 @@ function addNewEntry(value=''){
         const task = newtskbx.value.trim();
 
         if (task === '') return;
-        
+
         const isChecked = newFCheck.innerText === "✔"
         newFCheck.innerText = isChecked ? '' : '✔'
         newtskbx.classList.toggle("done", !isChecked);
@@ -71,7 +71,3 @@ function addNewEntry(value=''){
 }
 
 addNewEntry();
-
-
-
-// console.logdocument.getElementById("taskbx").nextSibling

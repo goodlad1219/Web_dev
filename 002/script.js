@@ -28,45 +28,50 @@ function time_subtitle() {
 
 setInterval(time_subtitle, 1000) 
 
-const parentElemet = document.getElementById("Parent");
-var counter=1;
-counter++;
-var id = "taskbox"+counter;
-console.log(id);
+const parentElement = document.getElementById("Parent");
 
-const newList = document.createElement("li");
-newList.id = "ListItem";
-const newDiv = document.createElement("div");
-newDiv.classList.add("Entry");
-newDiv.id = "Entry"
 
-const newCheck = document.createElement("input");
-newCheck.classList.add("checkbx");
-newCheck.setAttribute("type","checkbox");
-newCheck.setAttribute("checked","checked");
-const newFCheck = document.createElement("span");
-newFCheck.classList.add("checks")
-const newtskbx = document.createElement("input");
-newtskbx.id = id;
-newtskbx.classList.add("taskbx");
-newtskbx.setAttribute("type","text");
 
-newDiv.appendChild(newCheck);
-newDiv.appendChild(newFCheck);
-newDiv.appendChild(newtskbx);
+function addNewEntry(value=''){
+    const newDiv = document.createElement("div");
+    newDiv.classList.add("Entry");
 
-newList.appendChild(newDiv);
 
-function newEntry(keypress) {
-    let e = keypress.key;
-    if (e==="Enter") {
-        parentElemet.appendChild(newList);
-        console.log("Done baby")
-    }
-};
+    const newFCheck = document.createElement("span");
+    newFCheck.classList.add("checks")
 
-document.getElementById("taskbx1").addEventListener("keydown",(kp) => {
-    newEntry(kp);
-});
+    const newtskbx = document.createElement("input");
+    newtskbx.classList.add("taskbx");
+    newtskbx.type = 'text';
+    newtskbx.value = value;
+
+    newtskbx.addEventListener("keydown", function (e) {
+        if (e.key==="Enter" && newtskbx.value.trim() !== '') {
+            newtskbx.setAttribute('readonly', true);
+            addNewEntry();
+        }
+    });
+
+    newFCheck.addEventListener("click", () => {
+
+        const task = newtskbx.value.trim();
+
+        if (task === '') return;
+        
+        const isChecked = newFCheck.innerText === "✔"
+        newFCheck.innerText = isChecked ? '' : '✔'
+        newtskbx.classList.toggle("done", !isChecked);
+    })
+
+    newDiv.appendChild(newFCheck);
+    newDiv.appendChild(newtskbx);
+
+    parentElement.appendChild(newDiv);
+    newtskbx.focus();
+}
+
+addNewEntry();
+
+
 
 // console.logdocument.getElementById("taskbx").nextSibling

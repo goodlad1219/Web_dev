@@ -20,19 +20,11 @@
     margin-top: 0%;
 }
 
-ul{
-    list-style: none;
-    padding-left: 0;
-}
-
-li{
-    margin-bottom: 5px;
-}
-
 .Entry{
     display: flex;
     flex-direction: row;
     font-size: 22px;
+    margin-bottom: 5px;
 }
 
 .Entry .taskbx{
@@ -40,15 +32,20 @@ li{
     /* opacity: 0; */
     border: none;
     outline: none;
-    background-color: #009900;
+    background-color: #f3f585;
 }
 
-.checkbx{
+.Entry input[type='text'].done{
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* .checkbx{
     position: absolute;
     opacity: 0;
     height: 0px;
     width: 0px;
-}
+} */
 
 .Entry .checks{
    position: block;
@@ -58,12 +55,16 @@ li{
    margin-right: 5px;
    height: 25px;
    width: 25px;
-   background-color: #80ff80;
+   background-color: #d8da69;
+   text-align: center;
+   padding-top: 1px;
+   font-size: medium;
    border-radius: 50%;
+   color: white;
 }
 
 .checks:hover{
-    background-color: #009900;
+    background-color: #a0a14f;
 }
 
 
